@@ -1,0 +1,29 @@
+.questions-container {
+  width: 960px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .grid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  li {
+    border: 1px ridge rgba(21, 22, 22, 0.753);
+    list-style: none;
+    padding: 10px 20px;
+    background-color: white;
+    min-height: 150px;
+    text-shadow: 1px 1px 1px #1616168c;
+    div {
+      padding: 10px;
+    }
+  }
+}

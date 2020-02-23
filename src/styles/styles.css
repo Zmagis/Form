@@ -1,0 +1,233 @@
+.form-container {
+  width: 45%;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  left: 22%;
+  -webkit-transform: translate(-50%, 18%);
+          transform: translate(-50%, 18%);
+}
+
+.form-container h1 {
+  margin-bottom: 40px;
+  -webkit-transition: ease all 1000ms;
+  transition: ease all 1000ms;
+}
+
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-container button {
+  padding: 10px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  -webkit-transition: ease all 500ms;
+  transition: ease all 500ms;
+  outline: none;
+}
+
+.form-container button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: -2px -2px #666666;
+          box-shadow: -2px -2px #666666;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.form-container .label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.DrawerToggle {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  margin: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  z-index: 500;
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgba(12, 66, 136, 0.2);
+}
+
+.navigation-container {
+  z-index: 500;
+}
+
+.navigation-container .links {
+  position: absolute;
+  top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+}
+
+.navigation-container .links .link {
+  margin: 25px 0;
+  width: 200px;
+}
+
+.navigation-container a {
+  background-color: rgba(255, 255, 255, 0.849);
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.questions-container {
+  width: 960px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.questions-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.questions-container .grid {
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.questions-container li {
+  border: 1px ridge rgba(21, 22, 22, 0.753);
+  list-style: none;
+  padding: 10px 20px;
+  background-color: white;
+  min-height: 150px;
+  text-shadow: 1px 1px 1px #1616168c;
+}
+
+.questions-container li div {
+  padding: 10px;
+}
+
+.video-box {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0c4288;
+  z-index: 3;
+  opacity: 0.6;
+}
+
+.home-content {
+  z-index: 5;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 800px;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 44px;
+}
+
+.home-content h1,
+.home-content p,
+.home-content a {
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 40px;
+}
+
+.home-content p {
+  line-height: 2rem;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.home-content .start-button {
+  border: 0.5px solid white;
+  padding: 20px 20px !important;
+  border-radius: 10px;
+  outline: none;
+}
+
+.home-content .start-button:hover {
+  background-color: rgba(255, 255, 255, 0.137);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #1e2022;
+  font-family: "Raleway", "Arial, Helvetica, sans-serif";
+}
+
+body {
+  background-color: rgba(233, 239, 241, 0.63);
+}
+/*# sourceMappingURL=styles.css.map */

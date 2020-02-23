@@ -1,0 +1,47 @@
+.form-container {
+  width: 45%;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  left: 22%;
+  transform: translate(-50%, 18%);
+  h1 {
+    margin-bottom: 40px;
+    transition: ease all 1000ms;
+  }
+  form input,
+  form select,
+  form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  button {
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: ease all 500ms;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+      box-shadow: -2px -2px rgb(102, 102, 102);
+      position: relative;
+      top: 2px;
+      left: 2px;
+    }
+  }
+  .label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
