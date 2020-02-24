@@ -21,7 +21,7 @@ const App = props => {
       <Switch>
         <Route path="/questions" component={Questions} />
         <Route path="/fill-form" component={Form} />
-        <Route path="/" component={Home} />
+        <Route path="/form" component={Home} />
       </Switch>
     </div>
   );
