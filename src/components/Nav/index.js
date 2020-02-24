@@ -21,7 +21,7 @@ const Nav = props => {
           </Fade>
           <Fade left delay={400} duration={400}>
             <div className="link" onClick={props.clickLink}>
-              <NavLink to="/form">Form</NavLink>
+              <NavLink to="/fill-form">Form</NavLink>
             </div>
           </Fade>
           <Fade left delay={700} duration={400}>

@@ -20,7 +20,7 @@ const App = props => {
       <Nav show={show} click={handleClick} clickLink={handleClickLink} />
       <Switch>
         <Route path="/questions" component={Questions} />
-        <Route path="/form" component={Form} />
+        <Route path="/fill-form" component={Form} />
         <Route path="/" component={Home} />
       </Switch>
     </div>
