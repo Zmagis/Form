@@ -23,7 +23,7 @@ const Home = props => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <NavLink className="start-button" to="/form">
+        <NavLink className="start-button" to="/fill-form">
           Let's start
         </NavLink>
       </div>
