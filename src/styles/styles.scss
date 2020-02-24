@@ -2,6 +2,7 @@
 @import "./nav";
 @import "./questions";
 @import "./home";
+@import "./spinner";
 
 * {
   margin: 0;
@@ -14,19 +15,7 @@ body {
   background-color: rgba(233, 239, 241, 0.63);
 }
 
-// .home-screen {
-//   height: 100vh;
-//   background-image: url("../images/paper.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   h1 {
-//     position: relative;
-//     top: 45%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-
-//     // background-color: gold;
-//     display: table;
-//   }
-// }
+.error_label {
+  color: red;
+  padding-top: 5px;
+}

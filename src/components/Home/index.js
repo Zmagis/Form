@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import video from "../../images/network.mp4";
 
@@ -11,6 +11,8 @@ const Home = props => {
           src={video}
           autoPlay={true}
           loop={true}
+          muted={true}
+          playsInline={true}
         ></video>
       </div>
 

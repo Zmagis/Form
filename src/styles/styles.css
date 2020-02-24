@@ -28,6 +28,7 @@
 }
 
 .form-container button {
+  background-color: #40b8bf;
   padding: 10px 30px;
   margin-top: 20px;
   border: none;
@@ -44,16 +45,35 @@
 
 .form-container button:hover {
   cursor: pointer;
-  -webkit-box-shadow: -2px -2px #666666;
-          box-shadow: -2px -2px #666666;
+  -webkit-box-shadow: -1px -1px #666666;
+          box-shadow: -1px -1px #666666;
   position: relative;
-  top: 2px;
-  left: 2px;
+  top: 1px;
+  left: 1px;
 }
 
 .form-container .label {
   margin-top: 10px;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .form-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .form-container button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .DrawerToggle {
@@ -77,7 +97,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
-  z-index: 500;
+  z-index: 9;
 }
 
 .DrawerToggle div {
@@ -87,11 +107,8 @@
   background-color: rgba(12, 66, 136, 0.2);
 }
 
-.navigation-container {
-  z-index: 500;
-}
-
 .navigation-container .links {
+  z-index: 500;
   position: absolute;
   top: 55px;
   display: -webkit-box;
@@ -116,6 +133,12 @@
   padding: 10px 20px;
   margin: 10px 0;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navigation-container a {
+    background-color: rgba(255, 255, 255, 0.949);
+  }
 }
 
 .questions-container {
@@ -143,7 +166,7 @@
 }
 
 .questions-container li {
-  border: 1px ridge rgba(21, 22, 22, 0.753);
+  border: 1px solid rgba(41, 48, 48, 0.438);
   list-style: none;
   padding: 10px 20px;
   background-color: white;
@@ -155,6 +178,39 @@
   padding: 10px;
 }
 
+@media (max-width: 1000px) {
+  .questions-container {
+    width: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 650px) {
+  .questions-container {
+    width: 300px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 360px) {
+  .questions-container {
+    width: 300px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .video-box {
   margin: 0;
   padding: 0;
@@ -164,7 +220,7 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  z-index: 2;
+  z-index: 10;
 }
 
 .overlay {
@@ -174,12 +230,12 @@
   top: 0;
   left: 0;
   background-color: #0c4288;
-  z-index: 3;
+  z-index: 100;
   opacity: 0.6;
 }
 
 .home-content {
-  z-index: 5;
+  z-index: 100;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -220,6 +276,88 @@
   background-color: rgba(255, 255, 255, 0.137);
 }
 
+@media (max-width: 500px) {
+  .home-content h1 {
+    font-size: 32px;
+  }
+  .home-content p {
+    line-height: 1.5rem;
+  }
+  .home-content p,
+  .home-content a {
+    font-size: 12px;
+  }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #06a9b5;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.loader {
+  color: #06a9b5;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -229,5 +367,10 @@
 
 body {
   background-color: rgba(233, 239, 241, 0.63);
+}
+
+.error_label {
+  color: red;
+  padding-top: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

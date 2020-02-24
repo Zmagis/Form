@@ -5,6 +5,7 @@
   top: 10%;
   left: 22%;
   transform: translate(-50%, 18%);
+
   h1 {
     margin-bottom: 40px;
     transition: ease all 1000ms;
@@ -22,6 +23,7 @@
   }
 
   button {
+    background-color: #40b8bf;
     padding: 10px 30px;
     margin-top: 20px;
     border: none;
@@ -34,14 +36,32 @@
     outline: none;
     &:hover {
       cursor: pointer;
-      box-shadow: -2px -2px rgb(102, 102, 102);
+      box-shadow: -1px -1px rgb(102, 102, 102);
       position: relative;
-      top: 2px;
-      left: 2px;
+      top: 1px;
+      left: 1px;
     }
   }
   .label {
     margin-top: 10px;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    button {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
   }
 }

@@ -13,7 +13,6 @@ const App = props => {
     setShow(!show);
   };
   const handleClickLink = () => {
-    console.log("click link");
     setShow(false);
   };
   return (

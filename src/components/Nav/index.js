@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
 import DrawerToggle from "./DrawerToggle";
 
 const Nav = props => {
-  console.log(props);
   return (
     <div className="navigation-container">
       <DrawerToggle click={props.click} />

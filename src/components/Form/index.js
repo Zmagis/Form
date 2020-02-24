@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { SliderPicker } from "react-color";
 import { Redirect } from "react-router-dom";
 
 import { validate } from "../../util";
 import FormField from "./FormField";
+import ColorPicker from "./ColorPicker";
 import axios from "axios";
 
 const Form = props => {
@@ -34,7 +34,7 @@ const Form = props => {
       element: "textarea",
       value: "",
       config: {
-        label: "Ask something stranger should think about",
+        label: "Your deep/random question",
         name: "question_input",
         type: "textarea",
         placeholder: "Example: When in your life you felt most alive?"
@@ -129,17 +129,10 @@ const Form = props => {
     <>
       <h1>Fill out the Form</h1>
       <form>
-        <div style={{ marginBottom: "20px" }}>
-          <div className="label" style={{ marginBottom: "10px" }}>
-            Pick your favorite color
-          </div>
-          <div style={{ padding: "10px 0px" }}>
-            <SliderPicker
-              color={background}
-              onChangeComplete={handleChangeComplete}
-            />
-          </div>
-        </div>
+        <ColorPicker
+          color={background}
+          handleChangeComplete={handleChangeComplete}
+        />
 
         <FormField
           id={"language"}
@@ -164,11 +157,7 @@ const Form = props => {
         />
 
         <div className="button-box">
-          <button
-            type="submit"
-            style={{ background: background }}
-            onClick={event => submitHandler(event)}
-          >
+          <button type="submit" onClick={event => submitHandler(event)}>
             Submit
           </button>
         </div>

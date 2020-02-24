@@ -10,7 +10,7 @@
   margin: 0 10px;
   box-sizing: border-box;
   cursor: pointer;
-  z-index: 500;
+  z-index: 9;
 }
 
 .DrawerToggle div {
@@ -21,8 +21,8 @@
 }
 
 .navigation-container {
-  z-index: 500;
   .links {
+    z-index: 500;
     position: absolute;
     top: 55px;
     display: flex;
@@ -40,5 +40,12 @@
     padding: 10px 20px;
     margin: 10px 0;
     text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .navigation-container {
+    a {
+      background-color: rgba(255, 255, 255, 0.949);
+    }
   }
 }

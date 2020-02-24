@@ -16,7 +16,7 @@
     grid-row-gap: 20px;
   }
   li {
-    border: 1px ridge rgba(21, 22, 22, 0.753);
+    border: 1px solid rgba(41, 48, 48, 0.438);
     list-style: none;
     padding: 10px 20px;
     background-color: white;
@@ -25,5 +25,34 @@
     div {
       padding: 10px;
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .questions-container {
+    width: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 650px) {
+  .questions-container {
+    width: 300px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 360px) {
+  .questions-container {
+    width: 300px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
