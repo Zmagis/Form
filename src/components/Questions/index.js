@@ -5,7 +5,7 @@ import Spinner from '../Spinner';
 
 const Questions = (props) => {
   const [questions, setQuestions] = useState([]);
-  const [laoding, setLoading] = useState(false);
+  // const [laoding, setLoading] = useState(false);
 
   //   useEffect(()=>{
   // if(questions)
